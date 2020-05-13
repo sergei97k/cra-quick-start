@@ -44,6 +44,18 @@ yarn eject       # remove the single build dependency from your project
 - Jest
 - Enzyme
 
+## Absolute Imports
+
+The presence of **jsconfig.json** file in a directory indicates that the directory is the root of a project.
+
+if you want to import a module located at **src/components/Button.js**, you can import the module like so:
+
+```javascript
+import Button from "components/Button";
+```
+
+For more information on this configuration file, see the [jsconfig.json reference](https://create-react-app.dev/docs/importing-a-component/#absolute-imports) documentation.
+
 ## WebStorm settings
 
 #### ESLint configuration:
